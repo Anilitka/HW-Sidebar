@@ -16,6 +16,11 @@ body{
 .nav-toggle-left{
     transform: translate(-405px, 0);
 }
+@media(max-width:500px){
+    .nav-toggle-left{
+        transform: translate(-205px,0);
+    }
+}
 
 .sidebar{
     background-color: #EF8354;
@@ -25,8 +30,13 @@ body{
     height: 100%;
     width: 400px;
     box-sizing: border-box;
-    transform: translate(400px, 0);
+    transform: translate(400px, 0)scale(0,0.1);
     transition: all .7s ease-in-out;
+}
+@media (max-width:500px){
+    .sidebar{
+        width: 200px;
+    }
 }
 .showsidebar{
     transform: translate(0,0);
